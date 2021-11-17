@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RID | Radon Infra Developers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com" />
+<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/IMG-logo1.jpg') }}">
+
+<!-- css --> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='materialize/css/materialize.min.css') }}" media="screen,projection" />
+<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+<link href="{{ url_for('static', filename='css/fancybox/jquery.fancybox.css') }}" rel="stylesheet"> 
+<link href="{{ url_for('static', filename='css/flexslider.css') }}" rel="stylesheet" /> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/zoomslider.css') }}" />
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper" class="home-page"> 
+		
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					
+                    <!-- <a class="navbar-brand" href="index.html"><i class="icon-info-blocks material-icons">account_balance</i>HillSide</a> -->
+                    <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/IMG-logo1.jpg') }}" width="100px" height="100px" alt="RID" srcset=""></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+						<ul class="nav navbar-nav">
+							<li><a class="waves-effect waves-dark" href="/">Home</a></li> 
+							<li><a class="waves-effect waves-dark" href="/projects">Projects</a></li>
+							<li><a class="waves-effect waves-dark" href="/about">About Us</a></li>
+							<li><a class="waves-effect waves-dark" href="/portfolio">Gallery</a></li>
+							<li><a class="waves-effect waves-dark" href="/contact">Contact</a></li>
+						</ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+	<section id="banner">
+	 
+	<!-- Slider -->
+	<div id="demo-1" data-zs-src='["https://images.unsplash.com/photo-1529781833076-5f422f69d1af?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aG91c2UsYnVpbGRpbmd8fHx8fHwxNjM3MTg2Mjgy&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", "https://images.unsplash.com/photo-1631649365397-da44533f8fb3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8YmlnLGhvdGVsfHx8fHx8MTYzNzE4NjM2Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", "https://images.unsplash.com/photo-1579901079378-97c789b3c53c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aG9tZSxvdXRkb29yfHx8fHx8MTYzNzE4NjQ4Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600"]' data-zs-overlay="dots">
+		<div class="demo-inner-content">
+			<p>Radon Infra Developers</p>
+			<!-- <img src="img/rid_tesla.png" width="500px" height="200px" alt="" srcset=""> -->
+		</div>
+	</div>
+	<!-- end slider --> 
+	</section>  
+		<section class="projects">
+		<div class="container">
+	 	<div class="row">
+			<div class="col-md-12">
+				<div class="aligncenter"><h2 class="aligncenter">Our Featured Projects</h2></div>
+				<br/>
+			</div>
+		</div>
+	
+	<div class="row service-v1 margin-bottom-40">
+            <div class="col-md-4 md-margin-bottom-40">
+					<div class="card small">
+                        <div class="card-image">
+                             <img class="img-responsive" src="{{ url_for('static', filename='img/service1.jpg') }}" alt="">   
+                        </div>
+                        <div class="card-content"> 
+                            <p>
+                                <span class="price">₹4.00 Lacs - 8.28 Lacs</span>
+								<h4>India County</h4>
+								<h5>Hyderabad</h5>
+								<a href="/details" class="btn btn-details">Details</a>
+                            </p>
+                        </div>
+                    </div>        
+            </div>
+			   <div class="col-md-4 md-margin-bottom-40">
+					<div class="card small">
+                        <div class="card-image">
+                             <img class="img-responsive" src="{{ url_for('static', filename='img/service2.jpg') }}" alt="">
+                        </div>
+                        <div class="card-content">
+                           <p>
+                                <span class="price">₹4.00 Lacs - 8.28 Lacs</span>
+								<h4>India County</h4>
+								<h5>Hyderabad</h5>
+								<a href="/details" class="btn btn-details">Details</a>
+                            </p>
+                        </div>
+                    </div>        
+            </div>
+			   <div class="col-md-4 md-margin-bottom-40">
+					<div class="card small">
+                        <div class="card-image">
+                             <img class="img-responsive" src="{{ url_for('static', filename='img/service3.jpg') }}" alt="">  
+                        </div>
+                        <div class="card-content">
+                           <p>
+                                <span class="price">₹4.00 Lacs - 8.28 Lacs</span>
+								<h4>India County</h4>
+								<h5>Hyderabad</h5>
+								<a href="/details" class="btn btn-details">Details</a>
+                            </p>
+                        </div>
+                    </div>        
+            </div> 
+        </div>
+		</div>
+		</section>
+	<section id="content"> 
+	<div class="container">
+	
+		<section class="services">
+	    	<div class="row">
+			<div class="col-md-12">
+				<div class="aligncenter"><h2 class="aligncenter">Amenities</h2>Amenities play a vital role in choosing good quality residential real estate. Amenities are features such as location,
+				clubhouse, swimming pools, gym, etc. that enhance the desirability of residential apartments. They contribute a great
+				deal to the pleasure and enjoyment for the residents and homebuyers.</div>
+				<br/>
+			</div>
+		</div>
+
+	 <div class="row">
+            <div class="col-sm-4 info-blocks"> 
+				<i class="icon-info-blocks material-icons">track_changes</i>
+                <div class="info-blocks-in">
+                    <h3>Kids Play Area</h3>
+                    <p>Playgrounds give children a place for physical exercise.They usually have equipment such as slides, swings and seesaws for children to play on.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 info-blocks">
+                <i class="icon-info-blocks material-icons">settings_input_svideo</i>
+                <div class="info-blocks-in">
+                    <h3>GYM</h3>
+                    <p>"Gym" is also slang for "fitness centre", which is often an area for indoor recreation. A gym may be open air as well. A
+					gym is a place with a number of equipments and machines used by the people to do exercises.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 info-blocks">
+                <i class="icon-info-blocks material-icons">queue_music</i>
+                <div class="info-blocks-in">
+                    <h3>Running Track</h3>
+                    <p>It provides a consistent surface for competitors to test their athletic ability.Running burns a lot more calories than slow, leisurely-paced running.</p>
+                </div>
+            </div>
+        </div>
+<div class="row">
+            <div class="col-sm-4 info-blocks">
+                <i class="icon-info-blocks material-icons">my_location</i>
+                <div class="info-blocks-in">
+                    <h3>Swimming</h3>
+                    <p>The sport takes place in pools or open water.Swimming is an individual or team racing sport that requires the use of one's entire body to move through water.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 info-blocks">
+                <i class="icon-info-blocks material-icons">shuffle</i>
+                <div class="info-blocks-in">
+                    <h3>Club House</h3>
+                    <p>All the facilities which a customer wants in a luxurious life are getting solved there. So to start with Club house
+					concept, it's a concept which is beneficial for the builder as well as for the customer.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 info-blocks">
+                <i class="icon-info-blocks material-icons">tab_unselected</i>
+                <div class="info-blocks-in">
+                    <h3>24/7 Security</h3>
+                    <p>It protects the organisation's ability to function. It protects the data the organisation collects and uses. It safeguards the technology the
+					organisation uses.</p>
+                </div>
+            </div>
+        </div>
+		</section>
+	</div>
+	</section>
+	
+	<section class="section-padding gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Our Team</h2>
+						<p><i>"Alone we can do so little, together we can do so much."</i></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			
+				<div class="col-md-6 col-sm-6">
+					<div class="about-image">
+						<img src="{{ url_for('static', filename='img/about.jpg') }}" alt="About Images">
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="about-text">
+					<h3>About Us</h3>
+						<p>Radon's Pharma Vista is a 9 acre layout with resedential plotting in the prime location of 
+							kadthal .The venture is DTCP(Director of Town and Country planning) approved layout.The Open 
+							Villa Plots has world class amenities and features.</p>
+						<p>Pharma vista has road facing of 1200 feet in existing kadthal to mucherla connecting road.
+							It is the best location for those who are willing to stay and ready for construction in a peaceful 
+							environment. You and your family can get the perfect entertainment and can easily set the tone 
+							for calm and relaxing home.</p>
+						<p>We pride ourselves on delivering high quality Open Villa Plots in safe and secure locations which 
+							are affordable yet full of luxurious and modern amenities.
+							Paved areas form ideal spots for outdoor furniture and paths for foot traffic
+							Garden beds and plants offering privacy and soften finishes
+							Grassed areas create play areas and free-roaming ground especially if you have kids and animals.</p>
+						<p>The swimming pool is the Spotlight in the green avenue plantation venture
+							Clubhouse Community tending to gather for group activities, social support, public information 
+							and other purposes
+							Attractive playground equipment offering kids fresh air, fun and exercise.</p>
+						<a href="/about" class="btn btn-primary waves-effect waves-dark">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	  
+	
+ 
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Our Contact</h5>
+					<address>
+					<strong>RID</strong><br>
+					TNR Apartments Entrance,Second Floor<br> Lakshmi narasimhapuram colony,<br>
+					Hasthinapuram,hyderabad,500070.</address>
+					<p>
+						<i class="icon-phone"></i> (+91) 999999999<br>
+						<i class="icon-envelope-alt"></i> email@domainname.com
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Quick Links</h5>
+					<ul class="link-list">
+						<li><a class="waves-effect waves-dark" href="/">Home</a></li>
+						<li><a class="waves-effect waves-dark" href="/about">About</a></li>
+						<li><a class="waves-effect waves-dark" href="/portfolio">Gallery</a></li>
+						<li><a class="waves-effect waves-dark" href="/projects">Projects</a></li>
+						<li><a class="waves-effect waves-dark" href="/contact">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Latest posts</h5>
+					<ul class="link-list">
+						<li><a class="waves-effect waves-dark" href="/projects">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a class="waves-effect waves-dark" href="/projects">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a class="waves-effect waves-dark" href="/projects">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Recent News</h5>
+					<ul class="link-list">
+						<li><a class="waves-effect waves-dark" href="/portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a class="waves-effect waves-dark" href="/portfolio">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a class="waves-effect waves-dark" href="/portfolio">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy;<a href="/" target="_blank"> Radon Infra Developers</a> 2021-22
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up HillSide"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+
+
+<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+<script src="{{ url_for('static', filename='materialize/js/materialize.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.fancybox.pack.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.fancybox-media.js') }}"></script>  
+<script src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+<script src="{{ url_for('static', filename='js/animate.js') }}"></script>
+<!-- Vendor Scripts -->
+<script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.zoomslider.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.isotope.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/animate.js') }}"></script> 
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
